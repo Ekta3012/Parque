@@ -1,5 +1,5 @@
 (function(){
-	app.config(function($stateProvider,$urlRouterProvider) {
+	angular.module('admin').config(function($stateProvider,$urlRouterProvider) {
 	    $stateProvider.state('dashboard', {
         url:'/',
         templateUrl: 'components/dashboard/dashboard.html'
@@ -12,7 +12,9 @@
         url:'/forms',
         templateUrl: 'components/forms/forms.html'
       });
-	    $urlRouterProvider.otherwise("/");
+	  $urlRouterProvider.otherwise("/");
 	});
 })();
+
+
 

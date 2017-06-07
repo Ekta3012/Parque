@@ -8,9 +8,10 @@
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/css/datepicker3.css" rel="stylesheet">
 <link href="assets/css/styles.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.js"></script>
 <script src="assets/js/lumino.glyphs.js"></script>
 <script type="text/javascript" src="app.module.js"></script>
 <script type="text/javascript" src="app.routes.js"></script>
@@ -48,11 +49,11 @@
 				</div>
 			</form>
 			<ul class="nav menu" >
-				<li><a href="#/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
-				<li><a href="#widgets"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Widgets</a></li>
+				<li><a ui-sref="/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
+				<li><a ui-sref="widgets"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Widgets</a></li>
 				<!-- <li ng-class="{ active:side.menuisSelected(3) }"><a href ng-click="side.selectMenu(3)"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Charts</a></li>
 				<li ng-class="{ active:side.menuisSelected(5) }"><a href ng-click="side.selectMenu(4)"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Tables</a></li>-->
-				<li><a href="#forms"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Forms</a></li>
+				<li><a ui-sref="forms"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Forms</a></li>
 				<!--<li ng-class="{ active:side.menuisSelected(7) }"><a href ng-click="side.selectMenu(6)"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Alerts &amp; Panels</a></li>
 				<li ng-class="{ active:side.menuisSelected(8) }"><a href ng-click="side.selectMenu(7)"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Icons</a></li> -->
 				<!-- <li class="parent" ng-class="{ active:side.menuisSelected(10) }">
@@ -82,7 +83,7 @@
 			</ul>
 		</div><!--/.sidebar-->
 		
-			<div ng-view></div>
+			<div ui-view></div>
 		
 		<!--/.main-->
 	</section>

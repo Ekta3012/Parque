@@ -929,7 +929,9 @@ h1.page-header {
 	overflow: scroll;
 }
 
-
+input:checkbox{
+	padding: 1%;
+}
 
 
 
