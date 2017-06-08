@@ -1,0 +1,23 @@
+{
+  "name": "parque_admin",
+  "version": "1.0.0",
+  "description": "Valet Parking",
+  "main": "app.module.js",
+  "dependencies": {
+    "angucomplete-alt": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ekta3012/Parque.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ekta3012/Parque/issues"
+  },
+  "homepage": "https://github.com/Ekta3012/Parque#readme"
+}

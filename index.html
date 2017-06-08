@@ -15,6 +15,8 @@
 <script src="assets/js/lumino.glyphs.js"></script>
 <script type="text/javascript" src="app.module.js"></script>
 <script type="text/javascript" src="app.routes.js"></script>
+<script type="text/javascript" src="components/partners/partnerService.js"></script>
+<script type="text/javascript" src="components/partners/partnerCOntroller.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -53,17 +55,15 @@
 				<li><a ui-sref="widgets"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Widgets</a></li>
 				<!-- <li ng-class="{ active:side.menuisSelected(3) }"><a href ng-click="side.selectMenu(3)"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Charts</a></li>
 				<li ng-class="{ active:side.menuisSelected(5) }"><a href ng-click="side.selectMenu(4)"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Tables</a></li>-->
-				<li><a ui-sref="forms"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Forms</a></li>
-				<!--<li ng-class="{ active:side.menuisSelected(7) }"><a href ng-click="side.selectMenu(6)"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Alerts &amp; Panels</a></li>
-				<li ng-class="{ active:side.menuisSelected(8) }"><a href ng-click="side.selectMenu(7)"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Icons</a></li> -->
-				<!-- <li class="parent" ng-class="{ active:side.menuisSelected(10) }">
+				<!-- <li><a ui-sref="register_valet"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Forms</a></li> -->
+				<li class="parent">
 					<a href="#">
-						<span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Dropdown 
+						<span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span>Valet 
 					</a>
 					<ul class="children collapse" id="sub-item-1">
 						<li>
-							<a class="" href="#">
-								<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 1
+							<a ui-sref="register_valet">
+								<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Registeration
 							</a>
 						</li>
 						<li>
@@ -78,7 +78,29 @@
 						</li>
 					</ul>
 				</li>
-				<li role="presentation" class="divider" ></li>
+				<li class="parent">
+					<a href="#">
+						<span data-toggle="collapse" href="#partner_register"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Partners 
+					</a>
+					<ul class="children collapse" id="partner_register">
+						<li>
+							<a ui-sref="register_Partner">
+								<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Registeration
+							</a>
+						</li>
+						<li>
+							<a class="" href="#">
+								<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 2
+							</a>
+						</li>
+						<li>
+							<a class="" href="#">
+								<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 3
+							</a>
+						</li>
+					</ul>
+				</li>
+				<!--<li role="presentation" class="divider" ></li>
 				<li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Login Page</a></li> -->
 			</ul>
 		</div><!--/.sidebar-->

@@ -5,3 +5,8 @@
 		'ui.router'
 		]);
 	})();
+
+var apiBase = "http://174.138.58.181/region";
+app.value("appSetting", {
+    "apiBaseUrl": apiBase
+});
