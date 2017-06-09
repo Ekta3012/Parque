@@ -2,11 +2,13 @@
 	var app= angular.module('admin',[
 		'ngRoute',
 		'ngAnimate',
-		'ui.router'
+		'ui.router',
+		'toaster',
+		'LocalStorageModule'
 		]);
-	})();
+	var apiBase = "http://174.138.58.181/";
+	app.value("appSetting", {
+	    "apiBaseUrl": apiBase
+	});
+})();
 
-var apiBase = "http://174.138.58.181/region";
-app.value("appSetting", {
-    "apiBaseUrl": apiBase
-});

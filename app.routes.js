@@ -6,7 +6,8 @@
       })
 	    .state("widgets", {
 	    	url:'/widgets',
-	        templateUrl : "components/widgets/widgets.html"
+	        templateUrl : "components/widgets/widgets.html",
+
 	    })
 	    .state('register_valet',{
         url:'/register_valet',
@@ -14,7 +15,8 @@
       })
 	    .state('register_Partner',{
         url:'/register_Partner',
-        templateUrl: 'components/partners/registration/form.html'
+        templateUrl: 'components/partners/registration/form.html',
+        controller:'partnerController'
       });
 	  $urlRouterProvider.otherwise("/");
 	});
