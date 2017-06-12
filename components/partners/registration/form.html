@@ -29,17 +29,13 @@
 										</div>
 										<div class="form-group">
 											<label>Region</label>
-											<select class="form-control" ng-options="item as item.name for item in regions.data"  ng-model="region" ng-change="update()">
+											<select class="form-control" ng-options="item as item.name for item in regions.data select as item.region_id"  ng-model="region" ng-change="update()">
 											</select>
 											 {{region.region_id}} {{region.name}}
 										</div>
 										<div class="form-group">
 											<label>Landmark</label>
-											<select class="form-control">
-												<option>Option 1</option>
-												<option>Option 2</option>
-												<option>Option 3</option>
-												<option>Option 4</option>
+											<select class="form-control" ng-options="item as item.name for item in landmark.data"  ng-model="landmark">
 											</select>
 										</div>	
 										<div class="form-group">

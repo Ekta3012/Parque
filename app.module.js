@@ -4,7 +4,7 @@
 		'ngAnimate',
 		'ui.router',
 		'toaster',
-		'LocalStorageModule'
+		'LocalStorageModule',
 		]);
 	var apiBase = "http://174.138.58.181/";
 	app.value("appSetting", {

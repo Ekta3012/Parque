@@ -9,11 +9,16 @@
 		})
 		.error(function(error){
 			console.log(error);
-			toaster.pop('error', "Error", "An Error has occured.Please try again after sometime.")
+			toaster.pop('error', "Error", "An Error has occured.Please try again after sometime.");
 		});
 		/*RegionService.getLandmark()
 		.success(function(response){
 			console.log("Landmark",response);
-		})*/
+			$scope.landmark=response;
+		})
+		.error(function(error){
+			console.log(error);
+			toaster.pop('error',"Error","Try again later");
+		});*/
 	});
 })();
